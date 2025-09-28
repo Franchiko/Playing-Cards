@@ -4,6 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
   <title>Playing Cards | with CSS</title>
 </head>
@@ -12,12 +15,70 @@
   <main id="playing-cards">
     <h1>Playing Cards</h1>
     <div class="card">
-      <div class="left"></div>
-      <div class="middle"></div>
-      <div class="right"></div>
+      <div class="left">
+        <div class="top-left">A</div>
+        <div class="bottom-left">♠</div>
+      </div>
+      <div class="middle">
+        <div class="center">♠</div>
+      </div>
+      <div class="right">
+        <div class="top-right">A</div>
+        <div class="bottom-right">♠</div>
+      </div>
     </div>
-    <div class="card"></div>
-    <div class="card"></div>
+    <div class="card">
+      <div class="left">
+        <div class="top-left">2</div>
+        <div class="bottom-left">♥</div>
+      </div>
+      <div class="middle">
+        <div class="center" style="--char-count:1">♥♥</div>
+      </div>
+      <div class="right">
+        <div class="top-right">2</div>
+        <div class="bottom-right">♥</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="left">
+        <div class="top-left">3</div>
+        <div class="bottom-left">♦</div>
+      </div>
+      <div class="middle">
+        <div class="center" style="--char-count:1">♦♦♦</div>
+      </div>
+      <div class="right">
+        <div class="top-right">3</div>
+        <div class="bottom-right">♦</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="left">
+        <div class="top-left">5</div>
+        <div class="bottom-left">♦</div>
+      </div>
+      <div class="middle">
+        <div class="center" style="--char-count:2">♦♦♦♦♦</div>
+      </div>
+      <div class="right">
+        <div class="top-right">5</div>
+        <div class="bottom-right">♦</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="left">
+        <div class="top-left">8</div>
+        <div class="bottom-left">♦</div>
+      </div>
+      <div class="middle">
+        <div class="center" style="--char-count:4">♦♦♦♦♦♦♦♦</div>
+      </div>
+      <div class="right">
+        <div class="top-right">8</div>
+        <div class="bottom-right">♦</div>
+      </div>
+    </div>
   </main>
 </body>
 

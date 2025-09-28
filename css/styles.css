@@ -3,7 +3,8 @@
 	padding: 0;
 	margin: 0;
 	font-size: 16px;
-	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	font-family: "Alan Sans", Georgia, Times, "Times New Roman", serif;
+	background-color: rgb(206, 170, 216);
 }
 
 main {
@@ -12,14 +13,17 @@ main {
 	flex-direction: column;
 	align-items: center;
 	margin: 20px;
+	flex-wrap: wrap;
+	gap: 20px;
 }
 
 .card {
-	width: 150px;
-	height: 150px;
-	background-color: tomato;
+	width: 250px;
+	height: 400px;
+	background-color: rgb(255, 255, 255);
 	border: 2px solid black;
-	border-radius: 3px;
+	border-radius: 8px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 	margin: 20px;
 	display: flex;
 	justify-content: space-between;
@@ -27,21 +31,75 @@ main {
 .card .left {
 	width: 30px;
 	height: 30px;
-	align-items: start;
+	justify-items: center;
+	align-self: start;
 	border-radius: 3px;
 	margin: 10px;
+	background-color: rgb(255, 255, 255);
+}
+
+.card .left .top-left {
+	font-size: 1.5rem;
+	font-weight: bold;
+	background-color: rgb(255, 255, 255);
+	color: black;
+}
+.card .left .bottom-left {
+	font-size: 2rem;
+	margin-top: -0.5rem;
+	font-weight: bold;
+	background-color: rgb(255, 255, 255);
+	color: black;
 }
 .card .middle {
 	width: 30px;
 	height: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	align-items: center;
+	justify-items: center;
+	align-self: center;
 	border-radius: 3px;
 	margin: 10px;
+	background-color: rgb(255, 255, 255);
 }
+.card .middle .center {
+	font-size: clamp(1.5rem, 12ch / (var(--char-count, 1)), 6rem);
+	font-weight: bold;
+	background-color: rgb(255, 255, 255);
+	color: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	word-break: break-word;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+}
+
 .card .right {
 	width: 30px;
 	height: 30px;
-	align-items: end;
+	justify-items: center;
+	align-self: end;
 	border-radius: 3px;
 	margin: 10px;
+	background-color: rgb(255, 255, 255);
+	transform: rotate(180deg);
+}
+
+.card .right .top-right {
+	font-size: 1.5rem;
+	font-weight: bold;
+	background-color: rgb(255, 255, 255);
+	color: black;
+}
+.card .right .bottom-right {
+	font-size: 2rem;
+	margin-top: -0.5rem;
+	font-weight: bold;
+	background-color: rgb(255, 255, 255);
+	color: black;
 }
