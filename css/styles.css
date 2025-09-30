@@ -6,11 +6,26 @@
 	font-family: "Alan Sans", Georgia, Times, "Times New Roman", serif;
 	background-color: rgb(206, 170, 216);
 }
+h1 {
+	text-align: center;
+	margin: 20px;
+	font-size: 2.5rem;
+	color: white;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.black {
+	color: black;
+}
+
+.red {
+	color: red;
+}
 
 main {
 	display: flex;
 	justify-content: center;
-	flex-direction: column;
+	flex-wrap: wrap;
 	align-items: center;
 	margin: 20px;
 	flex-wrap: wrap;
@@ -42,19 +57,18 @@ main {
 	font-size: 1.5rem;
 	font-weight: bold;
 	background-color: rgb(255, 255, 255);
-	color: black;
 }
 .card .left .bottom-left {
 	font-size: 2rem;
 	margin-top: -0.5rem;
 	font-weight: bold;
 	background-color: rgb(255, 255, 255);
-	color: black;
 }
 .card .middle {
 	width: 30px;
 	height: 30px;
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -68,7 +82,6 @@ main {
 	font-size: clamp(1.5rem, 12ch / (var(--char-count, 1)), 6rem);
 	font-weight: bold;
 	background-color: rgb(255, 255, 255);
-	color: black;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -94,12 +107,10 @@ main {
 	font-size: 1.5rem;
 	font-weight: bold;
 	background-color: rgb(255, 255, 255);
-	color: black;
 }
 .card .right .bottom-right {
 	font-size: 2rem;
 	margin-top: -0.5rem;
 	font-weight: bold;
 	background-color: rgb(255, 255, 255);
-	color: black;
 }
